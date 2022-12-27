@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  width: min(42.8rem, 90%);
+
+  background-color: white;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  animation: gradient 25s ease infinite;
+  background-size: 200% 200%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+/*Screen1 */
+.screen1 h1 {
+  color: #34355B;
+  margin: 4.9rem auto 1.3rem;
+  width: 25.8rem;
+}
+
+.screen1 p {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+
+  color: #34355B;
+  margin-bottom: 2rem;
+}
+
+.screen1 img {
+padding: 0 6.4rem 6.4rem;
+}
+
+.screen1 img:hover {
+  cursor: pointer;
+  transform: rotateY(30deg);
+  animation: vibration 0.5s;
+} 
+
+/*Screen2*/
+.screen2 {
+  width: min(42.8rem, 90%);
+  background-color: #FFFFFF; 
+  border-radius: .5rem; 
+  align-items: center;
+
+  text-align: center;
+  padding: 4.8rem 6.4rem;
+}
+
+.screen2 h2 {
+  width: 29.7rem;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 p {
+  font-family: 'Dancing Script', cursive;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #000000;
+
+  padding: 10px;
+  gap: 1rem;
+  width: 29.3rem;
+  height: 10.7remx;
+
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  margin-bottom: 1.7rem;
+}
+
+.screen2 button {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1.6rem;
+  gap: 1rem;
+
+  width: 17.4rem;
+  height: 5.2rem;
+  margin: auto 6.3rem;
+
+  background: #FF9500;
+  border: none;
+  border-radius: .4rem;
+}
+
+.screen2 button:hover {
+  background: #fa6e09;
+} 
+
+@keyframes vibration {
+  0% {margin-left: 0; rotate: 2deg;}
+  25% {margin-left: .5rem; rotate: -2deg;}
+  50% {margin-left: 0; rotate: 2deg;}
+  75% {margin-left: -.5rem; rotate: -2deg;}
+  100% {margin-left: 0;rotate: 2deg;}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
